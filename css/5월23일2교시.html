@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼꾸미기</title>
+</head>
+<style>
+    input[type=text]{
+        color:red;
+    }
+    input[type=text]{
+        color:aliceblue;
+    }
+    input[type=text]:focus{
+        font-size: 120%;
+    }
+    #forName:focus{
+        font-size: 120%;
+    }
+    @keyframes tcolor{
+        0%{color:red}
+        50%{color:green}
+        100%{color:blue}
+    }
+    #tform {
+        animation-name: tcolor;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes bomb{
+        0%{font-size: 500%;}
+        100%{font-size: 100%;}
+    }
+    #tgmim:hover{
+        animation-name: bomb;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+</style>
+<body>
+    <h3><span id="tform">폼</span><span id="tgmim">꾸미기</span></h3>
+    <hr />
+    <form action="">
+        <label for="name" id="forName">이름:
+            <input type="text" id="name"> 
+        </label>
+    </form>
+</body>
+</html>
